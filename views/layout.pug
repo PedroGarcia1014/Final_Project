@@ -1,7 +1,16 @@
 doctype html
 html
   head
-    title= Downtown Donuts
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    title Downtown Donuts - #{title}
+    link(rel="stylesheet", href="/stylesheets/style.css")
   body
+  .navbar
+      a(href="/")
+        img.logo(src="https://thespeedtrap.net/wp-content/uploads/2018/12/donut1.png?w=1360")
+      a(href="/") Home
+      a(href="/menu") Menu
+      a(href="/about") About Us
+      a(href="/comments") Comments
+
     block content
+    
