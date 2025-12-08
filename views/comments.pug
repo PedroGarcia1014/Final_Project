@@ -1,0 +1,23 @@
+extends layout 
+block content 
+<h1> Customer feedback/comments</h1>
+ <div>
+  <input id="nameInput" type="text" placeholder="Your name">
+  <br><br>
+  <textarea id="messageInput" placeholder="Write your comment here"></textarea>
+  <br><br>
+  <button onclick="addComment()">Add Comment</button>
+form(method="POST", action="/comments")
+    input(type="text", name="name", placeholder="Your name")
+    textarea(name="message", placeholder="Write your comment here")
+    button(type="submit") Add Comment
+
+  if comments.length
+    h2 Comments
+    each c in comments
+      div
+        h3= c.name
+        p= c.message
+        p= c.created_at
+  else
+    p There are no comments yet.
