@@ -1,8 +1,60 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-a {
-  color: #00B7FF;
+
+.navbar {
+  background: white;
+  padding: 10px;
+  border-bottom: 3px solid #F7C64A;
+}
+
+.navbar a {
+  margin: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+.top {
+  background: #10291D;
+  color: white;
+  padding: 20px;
+}
+
+.big-logo {
+  width: 120px;
+  border-radius: 50%;
+}
+
+
+img {
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 3px solid #F7C64A;
+}
+
+
+input, textarea {
+  width: 80%;
+  margin: 10px;
+  padding: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #F7C64A;
+  border: none;
+  cursor: pointer;
 }
